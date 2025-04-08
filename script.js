@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Hardcoded TCG Set List (Comprehensive as of approx Apr 2025) ---
     const commonTcgSets = [
-        "151", "Aquapolis", "Arceus", "Astral Radiance", "Base Set", "Base Set 2", "Battle Styles",
+        "SV: Scarlet & Violet 151", "Aquapolis", "Arceus", "Astral Radiance", "Base Set", "Base Set 2", "Battle Styles",
         "Black & White", "Boundaries Crossed", "BREAKpoint", "BREAKthrough", "Brilliant Stars",
         "Burning Shadows", "Call of Legends", "Celebrations", "Celestial Storm", "Champion's Path",
         "Chilling Reign", "Cosmic Eclipse", "Crimson Invasion", "Crown Zenith", "Crystal Guardians",
