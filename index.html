@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex - All Pokémon</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Optional: Hide scrollbar while keeping functionality */
+        .pokemon-list-container::-webkit-scrollbar { display: none; }
+        .pokemon-list-container { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
 </head>
 <body>
 
@@ -19,20 +24,26 @@
         <div class="pokemon-list-container" id="pokemonList">
             </div>
 
-        <div id="loader" class="loader" style="display: none;">Loading more Pokémon...</div>
+        <div id="noResultsMessage" class="loader no-results" style="display: none;">
+            No Pokémon found matching your search.
+        </div>
+
+        <div id="loader" class="loader" style="display: none;"></div>
     </div>
 
     <div id="pokemonDetailModal" class="modal">
         <div class="modal-content">
             <span class="close-button" id="closeModalButton">&times;</span>
             <div id="pokemonDetailContent">
-                <div class="loader">Loading details...</div>
-            </div>
+                <div class="loader"></div> </div>
         </div>
     </div>
+
     <footer>
-        <p>&copy; <span id="copyright-year"></span> All rights reserved Cypher212</p>
+        <p>&copy; <span id="copyright-year">2025</span> All rights reserved Cypher212</p>
     </footer>
+
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
     <script src="script.js"></script>
 </body>
